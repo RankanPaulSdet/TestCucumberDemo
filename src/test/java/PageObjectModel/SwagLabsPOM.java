@@ -31,7 +31,7 @@ public class SwagLabsPOM {
     WebElement Password_field;
 
     @FindBy(xpath = "//input[@id='user-name']")
-    WebElement Username;
+    WebElement UsernameOfThePage;
 
     @FindBy(xpath = "//input[@id='password']")
     WebElement Password;
@@ -72,7 +72,7 @@ public class SwagLabsPOM {
     }
 
     public void UsernameEle(String user){
-        Username.sendKeys(user);
+        UsernameOfThePage.sendKeys(user);
     }
 
     public void PasswordEle(String pass){
